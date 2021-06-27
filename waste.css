@@ -1,0 +1,263 @@
+.slide{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    border:none;
+
+
+    .card{
+        border:none;
+        position: relative;
+        top: 0;
+
+        .date{
+            background:#9b0c23; 
+            position:absolute;
+            padding: 0;
+            margin: 0;        
+            top: 20rem;
+            left:0.8rem;
+            p{
+                color: white;
+                text-align: center;
+            }
+        }
+        .card-body{
+            h1{
+                color:#9b0c23;
+                font-size: 1.5rem;
+
+                &:hover{
+                    color:black;
+                }
+            }
+            p{
+                font-size:1.8rem;
+                line-height: 2.32rem;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+                &:hover{
+                    color:#9b0c23;
+                }
+            }
+        }
+    }
+}
+.header{
+    display: flex;
+    position: fixed;
+    width: 100% ;
+    top: 0; left: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
+    background: rgba(69, 69, 69,0.5);
+    overflow: hidden;
+
+    .navbar-nav li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        font-size: 2rem; 
+        font-family: 'PT Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+        
+
+
+        .header{
+            display: flex;
+            background: rgba(199, 31, 31, 0.1);
+            width: 100%;
+            z-index: 1000;
+            position: fixed;
+             
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+        
+            }
+            .navbar-nav li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                font-size: 2rem; 
+                font-family: 'PT Serif', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+                
+                
+                    a{
+                        color:$w;
+                        text-decoration: none;
+                        font-size: 19px;
+                        font-weight: 400;
+                        
+
+        
+                        &:hover{
+                                color:rgb(134, 123, 123);
+                        }
+        
+                    }
+                }
+        } 
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid black;
+
+        .ligh{
+            color:rgb(143, 137, 137);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .card{
+            border:none;
+            
+            top: 0;
+    
+            .date{
+                 
+                position:absolute;
+                padding: 0;      
+                top: 15rem;
+                left:0.8rem;
+                p{
+                    background:#9b0c23;
+                    color: white;
+                    padding: 0.5rem;
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+            }
+
+        }
+
+        .content {
+            position: absolute;
+            z-index: 1;
+            padding: 1rem;
+            color: $w;
+            bottom: 0%;
+            left: 10%;
+        
+            h1 {
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                font-weight: bold;
+                margin-top: 1rem;
+            }
+        
+            p {
+                font-size: 3.5rem;
+                letter-spacing: 0.2rem;
+                font-weight: 500;
+                margin-top: 1rem;
+                font-family: "PT Serif";
+                line-height: 4rem;
+                color: #fff;
+            }
+        
+            a {
+                button {
+                    background: #9b0c23;
+                    border: none;
+                    outline: none;
+                    font-size: 2rem;
+                    border-radius: 5rem;
+                    padding: 0.9rem;
+                    color: white;
+                    margin-top: 1rem;
+                    font-family: "PT Serif";
+        
+                    &:hover {
+                        color: #000;
+                        background: none;
+                        border: 0.2rem solid white;
+                    }
+                }
+            }
+        }
+
+
+        .navbar-nav {
+            li {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                font-family: "PT Serif", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+                padding: 1.1em 0.5rem;
+    
+                &:hover {
+                    border-bottom: 3px solid white;
+                    transition: all 0.5s ease 0s;
+                }
+                a {
+                    color: $w;
+                    text-decoration: none;
+                    font-size: 19px;
+                    font-weight: 400;
+    
+                    &:hover {
+                        color: rgb(185, 178, 178);
+                    }
+                }
+                button {
+                    margin: 0;
+                    background: $r;
+                    border: none;
+                    outline: none;
+                    border-radius: 5rem;
+                    padding: 0.9rem;
+                    color: white;
+    
+                    &:hover {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+                .hover1{
+                    display:none; 
+                }
+                &:hover .hover1{
+                    display: block;
+                    position: absolute;
+                    background-color: rgb(190, 196, 192);
+                    top:90px;
+                    left:0;
+                    
+                }
+                &:hover .hover1 ul{
+                    display:block;
+                    background: #3f3f3f;
+                    padding: 2rem;
+                }
+                &:hover .hover1 li{
+                    border: none;
+                    font-size:14px;
+                    padding: 1rem 10rem 1rem 0rem;
+                    color: #e2dddd;
+                    text-transform: capitalize;
+                    
+                }
+            }
+             
+            .nav-item1:hover {
+                border-bottom: none;
+            }
+        }
